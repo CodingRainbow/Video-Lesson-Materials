@@ -85,9 +85,9 @@ class Fluid {
       for (let j = 0; j < N; j++) {
         let x = i * SCALE;
         let y = j * SCALE;
-        let vx = this.Vx[IX(i, j, k)];
-        let vy = this.Vy[IX(i, j, k)];
-        this.canvas.stroke(0);
+        let vx = this.Vx[IX(i, j)];
+        let vy = this.Vy[IX(i, j)];
+        stroke(0);
 
         if (!(abs(vx) < 0.1 && abs(vy) <= 0.1)) {
           line(x, y, x + vx * SCALE, y + vy * SCALE);
