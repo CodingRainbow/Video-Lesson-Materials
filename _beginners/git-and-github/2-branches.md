@@ -3,7 +3,9 @@ title: Branches
 video_number: 2
 date: 2016-04-19
 video_id: oPpnCh7InLY
-
+tags:
+  - git
+  - github
 links:
   - title: "GitHub Website"
     url: https://github.com/

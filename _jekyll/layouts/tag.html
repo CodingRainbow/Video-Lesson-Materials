@@ -1,0 +1,77 @@
+---
+layout: base
+---
+
+{% comment %} Show the page's subtitle. {% endcomment %}
+<div class="subtitle">
+  {{ page.subtitle | xml_escape }}
+</div>
+
+{% assign tag_post = '' | split: '' %}
+
+
+{% for post in site.learning %}
+  {% if post.tags contains page.tag-name %}
+    {% assign tag_post = tag_post | push: post %}
+  {% endif %}
+{% endfor %}
+
+{% for post in site.beginners %}
+  {% if post.tags contains page.tag-name %}
+    {% assign tag_post = tag_post | push: post %}
+  {% endif %}
+{% endfor %}
+
+{% for post in site.more %}
+  {% if post.tags contains page.tag-name %}
+    {% assign tag_post = tag_post | push: post %}
+  {% endif %}
+{% endfor %}
+
+{% for post in site.challenges %}
+  {% if post.tags contains page.tag-name %}
+    {% assign tag_post = tag_post | push: post %}
+  {% endif %}
+{% endfor %}
+
+{% for post in site.CodingChallenges %}
+  {% if post.tags contains page.tag-name %}
+    {% assign tag_post = tag_post | push: post %}
+  {% endif %}
+{% endfor %}
+
+{% for post in site.Courses %}
+  {% if post.tags contains page.tag-name %}
+    {% assign tag_post = tag_post | push: post %}
+  {% endif %}
+{% endfor %}
+
+{% for post in site.GuestTutorials %}
+  {% if post.tags contains page.tag-name %}
+    {% assign tag_post = tag_post | push: post %}
+  {% endif %}
+{% endfor %}
+
+{% for post in site.Streams %}
+  {% if post.tags contains page.tag-name %}
+    {% assign tag_post = tag_post | push: post %}
+  {% endif %}
+{% endfor %}
+
+{% for post in site.TeachableMachine %}
+  {% if post.tags contains page.tag-name %}
+    {% assign tag_post = tag_post | push: post %}
+  {% endif %}
+{% endfor %}
+
+{% for post in site.Tutorials %}
+  {% if post.tags contains page.tag-name %}
+    {% assign tag_post = tag_post | push: post %}
+  {% endif %}
+{% endfor %}
+
+{% include 1-tools/sort-videos.html videos=tag_post sortByDate=true reverse=true %}
+
+{% include 3-modules/video-list.html sortedVideos=out_sortedVideos %}
+
+<a href="{{ '/tag' | relative_url }}">More tags</a>

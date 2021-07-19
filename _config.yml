@@ -115,6 +115,9 @@ collections:
   learning: { output: true }
   more: { output: true }
   redirects: { output: true }
+  tag:
+    output: true
+    permalink: tag/:path/
 
 # --- Defaults ---
 

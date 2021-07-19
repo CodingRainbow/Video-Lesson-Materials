@@ -28,7 +28,8 @@
     "lint-cabana-fix": "./node_modules/.bin/eslint ./CodingInTheCabana/ --fix",
     "lint-tutorials-fix": "./node_modules/.bin/eslint ./Tutorials/ --fix",
     "lint-courses-fix": "./node_modules/.bin/eslint ./Courses/ --fix",
-    "yt-descriptions": "node ./_scripts/generate-youtube-descriptions.js"
+    "yt-descriptions": "node ./_scripts/generate-youtube-descriptions.js",
+    "tags-generate": "node ./_scripts/generate-tags.js"
   },
   "repository": {
     "type": "git",

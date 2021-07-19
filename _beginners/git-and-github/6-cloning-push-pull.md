@@ -3,6 +3,9 @@ title: Cloning Repo and Push/Pull
 video_number: 6
 date: 2016-05-04
 video_id: yXT1ElMEkW8
+tags:
+  - git
+  - github
 
 links:
   - title: "Git Website"

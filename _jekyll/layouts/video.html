@@ -53,7 +53,11 @@ layout: base
       {% if page.topics %}
         {% include 3-modules/link-list.html links=page.topics title='Topics' class='topics' %}
       {% endif %}
-      
+
+      {% comment %} List of tags. {% endcomment %}
+      {% if page.tags[0] %}
+        {% include 3-modules/tags-list.html tags=page.tags title='tags' class='tags' %}
+      {% endif %}
     </div>
   </div>
 

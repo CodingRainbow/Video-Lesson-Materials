@@ -1,0 +1,17 @@
+{% comment %}
+
+  Parameters:
+    tags Tags[]     The link objects to display in the list.
+{% endcomment %}
+
+
+<div class="link-list {{ include.class | xml_escape }}">
+  <h3>{{ include.title | xml_escape }}</h3>
+  <ul>
+    {% for tag in include.tags %}
+      <li>
+        <a href="/tag/{{ tag }}">#{{ tag }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

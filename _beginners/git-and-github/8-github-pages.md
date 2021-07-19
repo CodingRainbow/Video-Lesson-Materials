@@ -3,6 +3,9 @@ title: GitHub Pages
 video_number: 8
 date: 2016-06-02
 video_id: bFVtrlyH-kc
+tags:
+  - git
+  - github
 
 links:
   - title: "Poem Website Repository"
@@ -20,4 +23,4 @@ videos:
     url: /Tutorials/9-additional-topics/9.13-github-pages-p5
 ---
 
-In part 8 of the Git and GitHub for Poets series, I show you how to use GitHub Pages as free web hosting. 
+In part 8 of the Git and GitHub for Poets series, I show you how to use GitHub Pages as free web hosting.

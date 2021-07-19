@@ -3,7 +3,9 @@ title: Introduction
 video_number: 1
 date: 2016-04-19
 video_id: BCQHnlnPusY
-
+tags:
+  - git
+  - github
 links:
   - title: "GitHub Website"
     url: https://github.com/

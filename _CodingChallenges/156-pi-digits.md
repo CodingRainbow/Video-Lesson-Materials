@@ -5,6 +5,10 @@ date: 2020-03-14
 web_editor: U649qYR4
 video_id: MEdpRYyjz_0
 repository: CC_156_Pi_Digits
+tags:
+  - pi
+  - p5js
+  - nodejs
 
 links:
   - title: "Sequence Localization of pi on angio.net"

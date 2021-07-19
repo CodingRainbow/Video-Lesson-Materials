@@ -3,6 +3,9 @@ title: git init and git add
 video_number: 7
 date: 2016-05-17
 video_id: 9p2d-CuVlgc
+tags:
+  - git
+  - github
 
 links:
   - title: "Rainbow Dance Repository"

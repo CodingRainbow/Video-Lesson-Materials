@@ -3,6 +3,9 @@ title: GitHub Issues
 video_number: 4
 date: 2016-04-24
 video_id: WMykv2ZMyEQ
+tags:
+  - git
+  - github
 
 links:
   - title: "GitHub Website"

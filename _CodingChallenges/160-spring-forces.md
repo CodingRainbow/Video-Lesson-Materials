@@ -4,6 +4,9 @@ video_number: 160
 date: 2021-02-22
 video_id: Rr-5HiXquhw
 repository: CC_160_spring_forces
+tags:
+  - p5js
+  - simulation
 
 variations:
   - name: "Simple Spring"

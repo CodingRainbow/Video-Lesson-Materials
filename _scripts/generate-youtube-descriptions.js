@@ -4,7 +4,7 @@ const yaml = require('yaml-front-matter');
 
 function findVideoFilesRecursive(dir, arrayOfFiles) {
   const files = fs.readdirSync(dir);
-  
+
   arrayOfFiles = arrayOfFiles || [];
 
   for (const file of files) {
@@ -49,7 +49,7 @@ function getVideoData() {
   for (const dir of directories) {
     findVideoFilesRecursive(dir, files);
   }
-  
+
   const videos = [];
 
   for (const file of files) {
@@ -74,7 +74,7 @@ function primeDirectory(dir) {
         throw err;
     }
   });
-  
+
   fs.mkdirSync(dir, err => {
     if(err) {
       throw err;
@@ -251,7 +251,17 @@ function writeDescriptions(videos) {
 
 📄 Code of Conduct: https://github.com/CodingTrain/Code-of-Conduct
 
-This description was auto-generated. If you see a problem, please open an issue: https://github.com/CodingTrain/website/issues/new`;
+`
+
+
+if (data.tags) {
+    for (let i = 0; i < data.tags.length; ++i) {
+      description += `#` + data.tags[i] + ` `;
+    }
+    description += `\n\n`;
+  }
+
+description += `This description was auto-generated. If you see a problem, please open an issue: https://github.com/CodingTrain/website/issues/new`;
 
     fs.writeFileSync(`_descriptions/${data.video_id}.txt`, description);
   }
