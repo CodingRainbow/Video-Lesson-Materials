@@ -41,11 +41,10 @@ function setup() {
 
   for (var n = 0; n < totalBees; n++) {
     var index = floor(random(options.length));
-    var choice = options[index];
+    // select and delete that spot so it's no longer an option
+    var choice = options.splice(index, 1)[0];
     var i = choice[0];
     var j = choice[1];
-    // Deletes that spot so it's no longer an option
-    options.splice(index, 1);
     grid[i][j].bee = true;
   }
 
