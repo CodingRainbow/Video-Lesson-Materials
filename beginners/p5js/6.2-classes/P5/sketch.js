@@ -23,7 +23,7 @@ function draw() {
 }
 
 class Bubble {
-  constructor(x, y, r) {
+  constructor() {
     this.x = 200;
     this.y = 150;
   }
